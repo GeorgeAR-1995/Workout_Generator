@@ -114,11 +114,14 @@ const repFunction = () => {
 
 //loop to print Day: Exercises
 for (k = 0; k < days.length; k++){
-    console.log(days[k] + ": " + workoutPlan[k] + " - " + setFunction() + " x " + repFunction())
+    if (workoutPlan[k] === "Have a day off to recover.")
+     {
+        console.log(days[k] + ": " + workoutPlan [k])
+     } else {
+    console.log(days[k] + ": " + workoutPlan[k] + " - " + setFunction() + " x " + repFunction() 
+    + ", " + setFunction() + " x " + repFunction() + ", " + setFunction() + " x " + repFunction())
+    }
 }
 
-
-
-// console.log(setFunction()+ "x" +repFunction());
 
 
