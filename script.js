@@ -16,6 +16,7 @@ const bodyPartRandom = () => {
     return bodyPart[(Math.floor(Math.random() * bodyPart.length))]
 }
 
+
 // Call the function to get a random body part
 let workoutPlan = [];
     for (let dayIndex = [0]; dayIndex < days.length; dayIndex++){
@@ -75,6 +76,7 @@ let workoutPlan = [];
 
                 case "rest":
                 //code
+                if(this.selectedExcerises.rest === 1)
                 workoutPlan.push("Have a day off to recover.")
                 break;
 
